@@ -1,0 +1,15 @@
+.button {
+    border: 0;
+    height: 40px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    background: #6750A4;
+    /* color: #fff; */
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button:hover {
+    filter: brightness(1.08);
+}

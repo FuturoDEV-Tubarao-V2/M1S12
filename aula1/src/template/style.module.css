@@ -1,0 +1,13 @@
+.header { 
+    height: 100px;
+    width: 100%;
+    background: #FEF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.logotipo {
+    font-family: monospace;
+}

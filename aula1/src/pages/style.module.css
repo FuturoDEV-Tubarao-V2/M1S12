@@ -1,0 +1,15 @@
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+.container form input + label {
+    display: block;
+    margin-top: 16px;
+}
+
+
+.container button {
+    margin-top: 16px;
+}
