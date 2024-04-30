@@ -36,14 +36,14 @@
 /* RESPONSIVIDADE */
 
 @media (max-width: 600px) {
-    .container {
+    .headerContent {
         max-width: 100%;
-        padding-bottom: 4rem; /** 64px */
-        padding: 0 2rem;
-        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: inherit;
+        gap: 1rem; /** 16px */
     }
 
-    .container table {
+    .containerAvatar span {
         display: none;
     }
 }
