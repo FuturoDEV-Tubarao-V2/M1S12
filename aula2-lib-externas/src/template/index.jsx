@@ -2,10 +2,14 @@ import { Button, Avatar } from '@mui/material'
 import { Link, Navigate, Outlet } from 'react-router-dom'
 
 import styles from './style.module.css'
+import { useAuth } from '../contexts/auth-context';
+import { LogOut } from 'lucide-react';
 
 export function Template() {
 
-    const isUserLogged = true;
+    const { user, signOut } = useAuth()
+
+    const isUserLogged = !!user; /// user === null ? false : true
 
     return isUserLogged ? (
         <>
@@ -21,6 +25,7 @@ export function Template() {
                                 <Avatar src="https://github.com/nicholasmacedoo.png" variant="rounded" />
                             </Link>
                             <span>Nicholas Macedo</span>
+                            <Button onClick={signOut}><LogOut size={16} /></Button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +34,7 @@ export function Template() {
                 <Outlet />
             </main>
         </>
-    ) : <Navigate to="/usuarios/1" />
+    ) : <Navigate to="/" />
 }
 
 
